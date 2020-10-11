@@ -8,7 +8,8 @@ items.addEventListener('click', delItem);
 function addItem(e){
     e.preventDefault();
     const item=document.getElementById('item').value;
-    
+
+    if(item !== ''){
     var li = document.createElement('li');
     li.className = 'list-group-item text-left';
     li.appendChild(document.createTextNode(item))
@@ -20,7 +21,10 @@ function addItem(e){
 
     items.appendChild(li)
     form.reset();
-    console.log(document)
+    console.log(document)}
+    else{
+        alert('Blank Input!')
+    }
 }
 
 function delItem(e){
