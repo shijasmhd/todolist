@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css">
+    <title>ToDo App</title>
+</head>
+<body>
+<div class="container-fluid bg-light text-center p-5 mb-5 border-bottom border-primary disabled ">
+    <div class="display-4">To<span class="text-success" >Do</span>List</div>
+</div>
+<div class="container border border-primary p-4 bg-light m-auto">
+    <div class="card text-center bg-light border-0">
+        <div class="card-title h3 text-muted p-3">Add Items</div>
+        <div class="card-text">
+            <form class="form" id="form">
+                <div class="row">
+                    <div class="col">
+                        <input id="item" type="text" class="form-control mx-3" placeholder="Type Here">
+                    </div>
+                    <div class="col text-left">
+                        <input id="submit" type="submit" class="btn btn-success px-4" value="Add"></button>
+                    </div>
+                </div>
+            </form>
+            <small class="form-text text-muted pb-3 text-left ml-4">Type and click on add button</small>
+        </div>
+        <div class="h2 text-muted p-3">Items</div>
+        <ul id="items" class="list-group">
+        </ul>
+
+    </div>
+</div>
+<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
